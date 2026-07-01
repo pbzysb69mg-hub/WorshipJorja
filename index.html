@@ -1,0 +1,2350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORSHIP JORJA • Pink Y2K Findom Temple v2</title>
+    <meta name="description" content="Spoilt, scouse &amp; paid to exist. Futuristic pink Y2K findom &amp; gooner paradise. Most viral clips, tributes, goon chamber.">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+        
+        :root {
+            --hot-pink: #ff00aa;
+            --pink: #ff69b4;
+            --light-pink: #ff9ed2;
+            --dark: #0a0014;
+            --darker: #05000a;
+            --glass: rgba(255, 105, 180, 0.08);
+            --glass-border: rgba(255, 255, 255, 0.15);
+            --chrome: linear-gradient(145deg, #ffffff, #c0c0c0, #ffffff);
+            --neon-glow: 0 0 15px #ff00aa, 0 0 30px #ff00aa;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+            background: var(--darker);
+            color: #fff;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+        
+        .futuristic-bg {
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(255, 0, 170, 0.12) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(255, 105, 180, 0.08) 0%, transparent 50%),
+                #05000a;
+        }
+        
+        .glass {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        
+        .neon-text {
+            text-shadow: var(--neon-glow);
+        }
+        
+        .chrome-text {
+            background: var(--chrome);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+        
+        .section {
+            display: none;
+            min-height: 100vh;
+            padding-top: 80px;
+        }
+        
+        .section.active {
+            display: block;
+            animation: fadeInUp 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(5, 0, 10, 0.95);
+            border-bottom: 1px solid rgba(255, 105, 180, 0.2);
+            backdrop-filter: blur(20px);
+        }
+        
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 76px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+        
+        .logo img {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            border: 2px solid var(--hot-pink);
+            box-shadow: 0 0 20px rgba(255, 0, 170, 0.5);
+        }
+        
+        .logo-text {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.65rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #fff, var(--pink));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -1.5px;
+        }
+        
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .nav-link {
+            color: #ddd;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 9999px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+            position: relative;
+        }
+        
+        .nav-link:hover {
+            color: #fff;
+            background: rgba(255, 105, 180, 0.1);
+        }
+        
+        .nav-link.active {
+            color: #fff;
+            background: rgba(255, 0, 170, 0.15);
+            box-shadow: 0 0 0 1px var(--hot-pink);
+        }
+        
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .quick-tribute-btn {
+            background: linear-gradient(135deg, var(--hot-pink), #ff1493);
+            color: white;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 9999px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+            box-shadow: 0 4px 15px rgba(255, 0, 170, 0.4);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .quick-tribute-btn:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 8px 25px rgba(255, 0, 170, 0.6);
+        }
+        
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 8px;
+        }
+        
+        .stats-bar {
+            background: rgba(0,0,0,0.6);
+            border-top: 1px solid rgba(255,105,180,0.15);
+            padding: 8px 0;
+            font-size: 0.8rem;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #ccc;
+        }
+        
+        .stat-value {
+            color: var(--pink);
+            font-weight: 700;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: linear-gradient(rgba(5,0,10,0.65), rgba(5,0,10,0.75)), url('https://pbs.twimg.com/media/HMH8FnqXYAAB6fS.jpg') center/cover no-repeat;
+            padding: 2rem;
+        }
+        
+        .hero-content {
+            max-width: 820px;
+            text-align: center;
+            z-index: 2;
+        }
+        
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 6px 18px;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            margin-bottom: 1.5rem;
+            backdrop-filter: blur(10px);
+        }
+        
+        .hero h1 {
+            font-size: clamp(3.2rem, 8vw, 5.8rem);
+            font-weight: 800;
+            line-height: 0.95;
+            margin-bottom: 1rem;
+            font-family: 'Space Grotesk', sans-serif;
+            letter-spacing: -4px;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.35rem;
+            color: #ff9ed2;
+            margin-bottom: 2.5rem;
+            max-width: 520px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-ctas {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 16px 36px;
+            border-radius: 9999px;
+            font-weight: 700;
+            font-size: 1.05rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: all 0.3s cubic-bezier(0.23, 1.0, 0.32, 1);
+            cursor: pointer;
+            border: none;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-primary {
+            background: #fff;
+            color: #0a0014;
+            box-shadow: 0 10px 30px rgba(255,255,255,0.2);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(255,255,255,0.3);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.1);
+            transform: translateY(-2px);
+        }
+        
+        .btn-pink {
+            background: linear-gradient(135deg, var(--hot-pink), #ff1493);
+            color: white;
+            box-shadow: 0 8px 25px rgba(255, 0, 170, 0.5);
+        }
+        
+        .btn-pink:hover {
+            transform: translateY(-3px) scale(1.015);
+            box-shadow: 0 15px 35px rgba(255, 0, 170, 0.7);
+        }
+        
+        .decorative {
+            position: absolute;
+            font-size: 1.8rem;
+            opacity: 0.15;
+            animation: float 6s ease-in-out infinite;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .star { color: #fff; }
+        .heart { color: var(--pink); }
+        
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .page-header h2 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            font-family: 'Space Grotesk', sans-serif;
+            letter-spacing: -2px;
+        }
+        
+        .page-header p {
+            color: #ff9ed2;
+            font-size: 1.15rem;
+        }
+        
+        .goon-chamber {
+            background: #0a0014;
+            border: 1px solid rgba(255, 105, 180, 0.2);
+            border-radius: 24px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .goon-chamber::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,0,170,0.06) 0%, transparent 70%);
+            animation: pulse-bg 8s ease infinite;
+            pointer-events: none;
+        }
+        
+        @keyframes pulse-bg {
+            0%,100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        .chamber-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .intensity-controls {
+            display: flex;
+            gap: 8px;
+        }
+        
+        .intensity-btn {
+            padding: 8px 20px;
+            border-radius: 9999px;
+            border: 1px solid rgba(255,255,255,0.2);
+            background: transparent;
+            color: #ccc;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .intensity-btn.active {
+            background: var(--hot-pink);
+            color: white;
+            border-color: var(--hot-pink);
+            box-shadow: 0 0 15px rgba(255,0,170,0.5);
+        }
+        
+        .timer-display {
+            font-size: 4.5rem;
+            font-weight: 800;
+            font-family: 'Space Grotesk', sans-serif;
+            text-align: center;
+            margin: 1.5rem 0;
+            letter-spacing: -4px;
+            color: #fff;
+            text-shadow: 0 0 30px rgba(255, 0, 170, 0.6);
+        }
+        
+        .timer-controls {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 2rem;
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 1.25rem;
+            margin-bottom: 2rem;
+        }
+        
+        .metric-card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,105,180,0.15);
+            border-radius: 16px;
+            padding: 1.25rem;
+            text-align: center;
+        }
+        
+        .metric-value {
+            font-size: 2.25rem;
+            font-weight: 800;
+            font-family: 'Space Grotesk', sans-serif;
+            color: var(--pink);
+        }
+        
+        .metric-label {
+            font-size: 0.85rem;
+            color: #aaa;
+            margin-top: 4px;
+        }
+        
+        .brain-melt {
+            margin: 2rem 0;
+        }
+        
+        .melt-bar {
+            height: 14px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 9999px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .melt-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #ff69b4, #ff00aa);
+            transition: width 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            box-shadow: 0 0 20px #ff00aa;
+        }
+        
+        .mantra-display {
+            background: rgba(0,0,0,0.4);
+            border: 1px solid rgba(255,105,180,0.3);
+            border-radius: 16px;
+            padding: 1.75rem 2rem;
+            text-align: center;
+            min-height: 92px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: #ff9ed2;
+            position: relative;
+        }
+        
+        .quick-tributes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        
+        .tribute-pill {
+            background: rgba(255,105,180,0.1);
+            border: 1px solid rgba(255,105,180,0.3);
+            color: #fff;
+            padding: 10px 22px;
+            border-radius: 9999px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 0.95rem;
+        }
+        
+        .tribute-pill:hover {
+            background: var(--hot-pink);
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255,0,170,0.5);
+        }
+        
+        .tribute-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .tribute-card {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 2rem 1.75rem;
+            text-align: center;
+            transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .tribute-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--hot-pink);
+            box-shadow: 0 20px 40px rgba(255, 0, 170, 0.15);
+        }
+        
+        .tribute-card.popular {
+            border-color: var(--hot-pink);
+            box-shadow: 0 0 0 1px var(--hot-pink);
+        }
+        
+        .tribute-card .amount {
+            font-size: 2.8rem;
+            font-weight: 800;
+            font-family: 'Space Grotesk', sans-serif;
+            color: #fff;
+            margin: 0.75rem 0;
+        }
+        
+        .tribute-card .label {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--pink);
+        }
+        
+        .tribute-card .perks {
+            font-size: 0.85rem;
+            color: #ccc;
+            margin-top: 1rem;
+            line-height: 1.5;
+        }
+        
+        .modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.85);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            padding: 1rem;
+        }
+        
+        .modal.active {
+            display: flex;
+        }
+        
+        .modal-content {
+            background: #0a0014;
+            border: 1px solid rgba(255,105,180,0.3);
+            border-radius: 24px;
+            max-width: 520px;
+            width: 100%;
+            max-height: 92vh;
+            overflow-y: auto;
+            position: relative;
+        }
+        
+        .modal-header {
+            padding: 1.75rem 2rem 1rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .modal-body {
+            padding: 2rem;
+        }
+        
+        .modal-footer {
+            padding: 1.5rem 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-label {
+            display: block;
+            font-size: 0.9rem;
+            color: #ff9ed2;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        .amount-slider {
+            width: 100%;
+            accent-color: var(--hot-pink);
+            margin: 1rem 0;
+        }
+        
+        .amount-display {
+            font-size: 3rem;
+            font-weight: 800;
+            text-align: center;
+            color: #fff;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        
+        .payment-options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-top: 1rem;
+        }
+        
+        .payment-btn {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: #fff;
+            padding: 14px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .payment-btn:hover {
+            background: rgba(255, 105, 180, 0.15);
+            border-color: var(--hot-pink);
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.25rem;
+        }
+        
+        .photo-card, .video-card {
+            position: relative;
+            border-radius: 18px;
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.3s ease;
+            background: #111;
+        }
+        
+        .photo-card:hover, .video-card:hover {
+            transform: scale(1.015);
+            box-shadow: 0 25px 50px rgba(255, 0, 170, 0.2);
+        }
+        
+        .photo-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+            aspect-ratio: 4/3;
+        }
+        
+        .photo-card:hover img {
+            transform: scale(1.08);
+        }
+        
+        .photo-overlay, .video-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(5,0,10,0.88) 25%, transparent 60%);
+            display: flex;
+            align-items: flex-end;
+            padding: 1.25rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .photo-card:hover .photo-overlay, .video-card:hover .video-overlay {
+            opacity: 1;
+        }
+        
+        .photo-caption, .video-caption {
+            color: #fff;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+        }
+        
+        .video-card {
+            aspect-ratio: 16/9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #1a001f, #0a0014);
+        }
+        
+        .video-play-btn {
+            width: 68px;
+            height: 68px;
+            background: rgba(255, 0, 170, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: white;
+            box-shadow: 0 0 30px rgba(255, 0, 170, 0.6);
+            transition: transform 0.2s ease;
+            z-index: 2;
+        }
+        
+        .video-card:hover .video-play-btn {
+            transform: scale(1.1);
+        }
+        
+        .video-meta {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: rgba(0,0,0,0.7);
+            padding: 2px 10px;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            z-index: 3;
+        }
+        
+        .video-duration {
+            position: absolute;
+            bottom: 12px;
+            right: 12px;
+            background: rgba(0,0,0,0.7);
+            padding: 1px 8px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            z-index: 3;
+        }
+        
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.96);
+            z-index: 3000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        
+        .lightbox.active {
+            display: flex;
+        }
+        
+        .lightbox-content {
+            position: relative;
+            max-width: 1100px;
+            width: 100%;
+        }
+        
+        .lightbox img {
+            max-height: 82vh;
+            width: 100%;
+            object-fit: contain;
+            border-radius: 12px;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+        }
+        
+        .lightbox-close, .lightbox-arrow {
+            position: absolute;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: #fff;
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            z-index: 10;
+        }
+        
+        .lightbox-close {
+            top: 20px;
+            right: 20px;
+        }
+        
+        .lightbox-arrow {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .lightbox-arrow.prev { left: 20px; }
+        .lightbox-arrow.next { right: 20px; }
+        
+        .lightbox-arrow:hover {
+            background: var(--hot-pink);
+            border-color: var(--hot-pink);
+        }
+        
+        .shop-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.75rem;
+        }
+        
+        .product-card {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 1.75rem;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--hot-pink);
+        }
+        
+        .product-price {
+            font-size: 1.85rem;
+            font-weight: 800;
+            color: #fff;
+            margin: 1rem 0 0.25rem;
+        }
+        
+        .about-bio {
+            max-width: 680px;
+            margin: 0 auto;
+            font-size: 1.25rem;
+            line-height: 1.7;
+            text-align: center;
+            color: #ddd;
+        }
+        
+        .y2k-accent {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .y2k-accent::after {
+            content: '✧';
+            position: absolute;
+            right: -18px;
+            top: -8px;
+            color: var(--pink);
+            font-size: 1.4rem;
+            animation: sparkle 1.5s infinite;
+        }
+        
+        .confetti {
+            position: fixed;
+            z-index: 9999;
+            pointer-events: none;
+            animation: confetti-fall 3.2s linear forwards;
+        }
+        
+        @keyframes confetti-fall {
+            to {
+                transform: translateY(110vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+        
+        .footer {
+            background: #05000a;
+            border-top: 1px solid rgba(255,105,180,0.15);
+            padding: 2.5rem 0 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #777;
+        }
+        
+        .keyboard-hint {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.7);
+            padding: 6px 14px;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            color: #888;
+            z-index: 500;
+            display: none;
+        }
+        
+        .gallery-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 2rem;
+        }
+        
+        .gallery-tab {
+            padding: 10px 28px;
+            border-radius: 9999px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.15);
+            color: #ccc;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .gallery-tab.active {
+            background: var(--hot-pink);
+            color: white;
+            border-color: var(--hot-pink);
+            box-shadow: 0 0 15px rgba(255,0,170,0.4);
+        }
+        
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .video-modal-content {
+            max-width: 820px;
+            background: #0a0014;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(255,105,180,0.3);
+        }
+        
+        .video-modal video {
+            width: 100%;
+            max-height: 70vh;
+            background: #000;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 76px;
+                left: 0;
+                right: 0;
+                background: #0a0014;
+                flex-direction: column;
+                padding: 1.5rem;
+                border-bottom: 1px solid rgba(255,105,180,0.2);
+            }
+            
+            .nav-links.show {
+                display: flex;
+            }
+            
+            .hamburger {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 2.9rem;
+            }
+            
+            .timer-display {
+                font-size: 3.2rem;
+            }
+            
+            .gallery-grid, .video-grid {
+                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body class="futuristic-bg">
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <img src="https://pbs.twimg.com/profile_images/2045795677561602048/yyhKq92K.jpg" alt="@WorshipJorja avatar">
+                <span class="logo-text">WORSHIP JORJA</span>
+            </a>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link" data-section="home">HOME</a>
+                <a href="#goon" class="nav-link" data-section="goon">GOON CHAMBER</a>
+                <a href="#tribute" class="nav-link" data-section="tribute">TRIBUTE TEMPLE</a>
+                <a href="#gallery" class="nav-link" data-section="gallery">ARCHIVE</a>
+                <a href="#shop" class="nav-link" data-section="shop">SHOP</a>
+                <a href="#about" class="nav-link" data-section="about">ABOUT</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button onclick="openTributeModal()" class="quick-tribute-btn">
+                    <span>💸</span> 
+                    <span>QUICK TRIBUTE</span>
+                </button>
+                <button class="hamburger" id="hamburger">☰</button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- LIVE STATS BAR -->
+    <div class="stats-bar">
+        <div class="stat-item">
+            <span>💖</span> 
+            <span><span id="goonersOnline">1,317</span> GOONERS MELTING</span>
+        </div>
+        <div class="stat-item">
+            <span>💸</span> 
+            <span>£<span id="totalTributed">187,420</span> TRIBUTED THIS MONTH</span>
+        </div>
+        <div class="stat-item">
+            <span>🔥</span> 
+            <span><span id="sessionsToday">812</span> SESSIONS TODAY</span>
+        </div>
+    </div>
+    
+    <!-- HOME / HERO -->
+    <section id="home" class="section active">
+        <div class="hero">
+            <!-- Decorative Y2K elements -->
+            <div class="decorative star" style="top: 15%; left: 8%; animation-delay: 0s;">✧</div>
+            <div class="decorative heart" style="top: 22%; right: 12%; animation-delay: 1.2s;">♥</div>
+            <div class="decorative star" style="bottom: 18%; left: 15%; animation-delay: 2.4s;">✦</div>
+            <div class="decorative heart" style="bottom: 25%; right: 18%; animation-delay: 0.8s;">♡</div>
+            <div class="decorative star" style="top: 38%; left: 22%; animation-delay: 3.1s;">✧</div>
+            
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span style="color:#ff69b4">✦</span> 
+                    <span>LIVERPOOL'S #1 PINK PRINCESS • 78 LIKES ON LATEST DROP</span>
+                </div>
+                
+                <h1 class="neon-text" style="background: linear-gradient(90deg, #fff, #ff9ed2, #fff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    WORSHIP<br>JORJA
+                </h1>
+                
+                <p class="hero-subtitle">"Spoilt, scouse &amp; paid to exist"</p>
+                
+                <div class="hero-ctas">
+                    <button onclick="navigateTo('goon')" class="btn btn-pink">
+                        <span>ENTER GOON CHAMBER</span> →
+                    </button>
+                    <button onclick="navigateTo('tribute')" class="btn btn-secondary">
+                        TRIBUTE NOW
+                    </button>
+                </div>
+                
+                <div style="margin-top: 3rem; font-size: 0.85rem; opacity: 0.6;">
+                    SCROLL TO BEGIN YOUR DESCENT ↓
+                </div>
+            </div>
+        </div>
+        
+        <!-- Quick intro strip -->
+        <div style="max-width: 820px; margin: 0 auto; padding: 3rem 2rem; text-align: center;">
+            <p style="font-size: 1.15rem; color: #ff9ed2;">
+                Futuristic Y2K temple for the weak, the obsessed, and the hopelessly addicted.<br>
+                Your only purpose: <span style="color:#ff69b4; font-weight:700;">stroke, send, repeat.</span><br>
+                <span style="font-size:0.9rem; opacity:0.7;">Now featuring my most viral recent clips</span>
+            </p>
+        </div>
+    </section>
+    
+    <!-- GOON CHAMBER -->
+    <section id="goon" class="section">
+        <div class="container">
+            <div class="page-header">
+                <h2 class="chrome-text">GOON CHAMBER</h2>
+                <p>Edge. Melt. Send. Repeat. ♻️ • Watch Princess while you goon</p>
+            </div>
+            
+            <div class="goon-chamber glass">
+                <!-- Intensity -->
+                <div class="chamber-header">
+                    <div>
+                        <span style="font-size:0.9rem; color:#ff9ed2;">INTENSITY LEVEL</span>
+                    </div>
+                    <div class="intensity-controls">
+                        <button class="intensity-btn active" data-level="1" onclick="setIntensity(1)">SOFT</button>
+                        <button class="intensity-btn" data-level="2" onclick="setIntensity(2)">MEDIUM</button>
+                        <button class="intensity-btn" data-level="3" onclick="setIntensity(3)">HARD</button>
+                        <button class="intensity-btn" data-level="4" onclick="setIntensity(4)">BRAINDEAD</button>
+                    </div>
+                </div>
+                
+                <!-- Timer + Tease Video side by side on desktop -->
+                <div style="display:grid; grid-template-columns: 1fr 1.1fr; gap:2rem; align-items:start;">
+                    <div>
+                        <!-- Timer -->
+                        <div style="text-align:center;">
+                            <div style="font-size:0.85rem; color:#888; margin-bottom:4px;">SESSION ELAPSED</div>
+                            <div id="timerDisplay" class="timer-display">00:00</div>
+                            
+                            <div class="timer-controls">
+                                <button onclick="toggleTimer()" id="timerBtn" class="btn btn-pink" style="padding:12px 32px; font-size:0.95rem;">▶ START GOONING</button>
+                                <button onclick="resetTimer()" class="btn btn-secondary" style="padding:12px 24px; font-size:0.95rem;">RESET</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Metrics -->
+                        <div class="metrics-grid" style="margin-top:1.5rem;">
+                            <div class="metric-card">
+                                <div id="edgeCount" class="metric-value">0</div>
+                                <div class="metric-label">EDGES</div>
+                                <button onclick="addEdge()" style="margin-top:10px; background:rgba(255,105,180,0.15); border:1px solid #ff69b4; color:#fff; padding:6px 18px; border-radius:9999px; font-size:0.8rem; cursor:pointer;">+ EDGE</button>
+                            </div>
+                            <div class="metric-card">
+                                <div id="brainMelt" class="metric-value">12</div>
+                                <div class="metric-label">% BRAIN MELT</div>
+                                <div class="brain-melt">
+                                    <div class="melt-bar">
+                                        <div id="meltFill" class="melt-fill" style="width:12%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tease Video in Goon Chamber -->
+                    <div style="background:#000; border-radius:16px; overflow:hidden; border:1px solid rgba(255,105,180,0.2);">
+                        <div style="padding:8px 12px; background:rgba(255,0,170,0.1); font-size:0.8rem; display:flex; align-items:center; justify-content:space-between;">
+                            <span style="color:#ff9ed2;">🔥 VIRAL TEASE — SCOUSE SUPREMACY (78 likes)</span>
+                            <span style="font-size:0.7rem; opacity:0.6;">15s</span>
+                        </div>
+                        <video id="goonTeaseVideo" width="100%" height="auto" muted loop playsinline style="display:block; max-height:280px; object-fit:cover;">
+                            <source src="https://video.twimg.com/amplify_video/2072054474596552704/vid/avc1/1080x1920/YFb9XjgqfeJbkSUC.mp4" type="video/mp4">
+                        </video>
+                        <div style="padding:8px; text-align:center; font-size:0.75rem; color:#888;">
+                            Watch Princess while you edge • Click to unmute
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mantra -->
+                <div style="margin: 2rem 0 1rem;">
+                    <div style="font-size:0.8rem; text-align:center; color:#888; margin-bottom:8px; letter-spacing:1px;">ROTATING MANTRA</div>
+                    <div id="mantraDisplay" class="mantra-display glass"></div>
+                </div>
+                
+                <div style="display:flex; flex-wrap:wrap; gap:12px; justify-content:center; align-items:center;">
+                    <button onclick="boostMelt()" class="btn btn-secondary" style="font-size:0.9rem; padding:10px 28px;">
+                        🔥 FORCE BRAIN MELT
+                    </button>
+                    <div class="quick-tributes">
+                        <div onclick="quickTribute(10, true)" class="tribute-pill" style="padding:6px 16px; font-size:0.8rem;">£10</div>
+                        <div onclick="quickTribute(25, true)" class="tribute-pill" style="padding:6px 16px; font-size:0.8rem;">£25</div>
+                        <div onclick="quickTribute(50, true)" class="tribute-pill" style="padding:6px 16px; font-size:0.8rem;">£50</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align:center; color:#777; font-size:0.85rem;">
+                Press <strong>SPACE</strong> to pause • <strong>E</strong> to edge • <strong>M</strong> to melt • Video clicks to toggle sound
+            </div>
+        </div>
+    </section>
+    
+    <!-- TRIBUTE TEMPLE -->
+    <section id="tribute" class="section">
+        <div class="container">
+            <div class="page-header">
+                <h2 class="chrome-text">TRIBUTE TEMPLE</h2>
+                <p>Prove your devotion. Spoil your Princess. 78 likes on latest drop — be better.</p>
+            </div>
+            
+            <div class="tribute-grid">
+                <!-- Tier Cards -->
+                <div class="tribute-card" onclick="selectTributeTier(10)">
+                    <div style="font-size:2rem;">🌸</div>
+                    <div class="label">PINK PETAL</div>
+                    <div class="amount">£10</div>
+                    <div class="perks">Basic worship • Good boy points</div>
+                </div>
+                
+                <div class="tribute-card popular" onclick="selectTributeTier(25)">
+                    <div style="font-size:2rem;">💖</div>
+                    <div class="label">CHROME HEART</div>
+                    <div class="amount">£25</div>
+                    <div class="perks">Personal reply • Edge permission</div>
+                </div>
+                
+                <div class="tribute-card" onclick="selectTributeTier(50)">
+                    <div style="font-size:2rem;">👑</div>
+                    <div class="label">NEON SLAVE</div>
+                    <div class="amount">£50</div>
+                    <div class="perks">Custom voice note • Task assignment</div>
+                </div>
+                
+                <div class="tribute-card" onclick="selectTributeTier(100)">
+                    <div style="font-size:2rem;">✨</div>
+                    <div class="label">Y2K GODDESS</div>
+                    <div class="amount">£100</div>
+                    <div class="perks">Full photo set • 10min voice call</div>
+                </div>
+                
+                <div class="tribute-card" onclick="selectTributeTier(250)">
+                    <div style="font-size:2rem;">🖤</div>
+                    <div class="label">ETERNAL GOONER</div>
+                    <div class="amount">£250</div>
+                    <div class="perks">Private video • Lifetime wallet drain</div>
+                </div>
+            </div>
+            
+            <div style="text-align:center; margin-top:3rem;">
+                <button onclick="openTributeModal()" class="btn btn-pink" style="padding:18px 48px; font-size:1.1rem;">
+                    CUSTOM TRIBUTE AMOUNT
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- GALLERY / ARCHIVE with TABS -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <div class="page-header">
+                <h2 class="chrome-text">THE PINK ARCHIVE</h2>
+                <p>Feast your eyes on my most popular recent photos &amp; viral videos. Then open your wallet.</p>
+            </div>
+            
+            <!-- Tabs -->
+            <div class="gallery-tabs">
+                <div onclick="switchGalleryTab('photos')" id="tab-photos" class="gallery-tab active">PHOTOS</div>
+                <div onclick="switchGalleryTab('videos')" id="tab-videos" class="gallery-tab">🔥 VIRAL VIDEOS</div>
+            </div>
+            
+            <!-- Photos Grid -->
+            <div id="photosGrid" class="gallery-grid"></div>
+            
+            <!-- Videos Grid -->
+            <div id="videosGrid" class="video-grid" style="display:none;"></div>
+            
+            <div style="text-align:center; margin-top:3rem; color:#666; font-size:0.85rem;">
+                Click any media to enlarge • All content is real • Most liked recent drops shown
+            </div>
+        </div>
+    </section>
+    
+    <!-- SHOP -->
+    <section id="shop" class="section">
+        <div class="container">
+            <div class="page-header">
+                <h2 class="chrome-text">DIGITAL WORSHIP EMPORIUM</h2>
+                <p>Buyable pieces of my perfection. Instant delivery to good boys.</p>
+            </div>
+            
+            <div class="shop-grid">
+                <div class="product-card glass">
+                    <div style="font-size:2.2rem; margin-bottom:0.5rem;">🎤</div>
+                    <h3 style="font-size:1.35rem; margin-bottom:0.25rem;">Bratty Voice Note</h3>
+                    <p style="color:#aaa; font-size:0.95rem;">Custom 60-second audio teasing you exactly how you need it.</p>
+                    <div class="product-price">£15</div>
+                    <button onclick="purchaseProduct('Bratty Voice Note', 15)" class="btn btn-pink" style="width:100%; margin-top:1rem; padding:14px;">PURCHASE</button>
+                </div>
+                
+                <div class="product-card glass">
+                    <div style="font-size:2.2rem; margin-bottom:0.5rem;">📸</div>
+                    <h3 style="font-size:1.35rem; margin-bottom:0.25rem;">Goon Fuel Pack</h3>
+                    <p style="color:#aaa; font-size:0.95rem;">10 exclusive photos + 3 audio clips. Perfect for long sessions.</p>
+                    <div class="product-price">£35</div>
+                    <button onclick="purchaseProduct('Goon Fuel Pack', 35)" class="btn btn-pink" style="width:100%; margin-top:1rem; padding:14px;">PURCHASE</button>
+                </div>
+                
+                <div class="product-card glass">
+                    <div style="font-size:2.2rem; margin-bottom:0.5rem;">🔒</div>
+                    <h3 style="font-size:1.35rem; margin-bottom:0.25rem;">Denial Video</h3>
+                    <p style="color:#aaa; font-size:0.95rem;">5-minute custom video where I ruin your orgasm in real time.</p>
+                    <div class="product-price">£65</div>
+                    <button onclick="purchaseProduct('Denial Video', 65)" class="btn btn-pink" style="width:100%; margin-top:1rem; padding:14px;">PURCHASE</button>
+                </div>
+                
+                <div class="product-card glass">
+                    <div style="font-size:2.2rem; margin-bottom:0.5rem;">👑</div>
+                    <h3 style="font-size:1.35rem; margin-bottom:0.25rem;">Full Ownership Session</h3>
+                    <p style="color:#aaa; font-size:0.95rem;">30-min live video call + aftercare instructions. Total control.</p>
+                    <div class="product-price">£180</div>
+                    <button onclick="purchaseProduct('Full Ownership Session', 180)" class="btn btn-pink" style="width:100%; margin-top:1rem; padding:14px;">PURCHASE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <div class="container" style="max-width:820px;">
+            <div class="page-header">
+                <img src="https://pbs.twimg.com/profile_images/2045795677561602048/yyhKq92K.jpg" alt="Jorja" style="width:140px; height:140px; border-radius:50%; border:4px solid #ff00aa; box-shadow:0 0 40px rgba(255,0,170,0.4); margin-bottom:1.5rem;">
+                <h2 class="chrome-text">ABOUT YOUR PRINCESS</h2>
+            </div>
+            
+            <div class="about-bio">
+                <p style="margin-bottom:1.5rem;">
+                    <strong style="color:#ff69b4;">Spoilt, scouse &amp; paid to exist.</strong><br><br>
+                    I'm the pink-obsessed financial dominatrix from Liverpool who was put on this earth to drain weak little wallets and melt gooner brains.<br><br>
+                    I don't chase. I attract. Your purpose is simple: <span style="color:#ff00aa;">worship, tribute, and obey.</span><br><br>
+                    My most viral recent drops are right here in the Archive — go watch them on loop.
+                </p>
+                
+                <div style="display:flex; justify-content:center; gap:2rem; margin:2.5rem 0; flex-wrap:wrap;">
+                    <div style="text-align:center;">
+                        <div style="font-size:2rem; font-weight:800; color:#ff69b4;">100%</div>
+                        <div style="font-size:0.85rem; color:#888;">BRAT</div>
+                    </div>
+                    <div style="text-align:center;">
+                        <div style="font-size:2rem; font-weight:800; color:#ff69b4;">0</div>
+                        <div style="font-size:0.85rem; color:#888;">MERCY</div>
+                    </div>
+                    <div style="text-align:center;">
+                        <div style="font-size:2rem; font-weight:800; color:#ff69b4;">∞</div>
+                        <div style="font-size:0.85rem; color:#888;">PINK ENERGY</div>
+                    </div>
+                </div>
+                
+                <p style="font-size:1.05rem; color:#ff9ed2;">
+                    Real tributes only. No time wasters. No broke boys.<br>
+                    If you can't afford to spoil me, you don't deserve to stroke to me.
+                </p>
+            </div>
+            
+            <div style="margin-top:4rem; padding-top:2rem; border-top:1px solid rgba(255,105,180,0.15); text-align:center;">
+                <button onclick="navigateTo('tribute')" class="btn btn-pink" style="padding:16px 42px;">
+                    START YOUR WORSHIP JOURNEY →
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- TRIBUTE MODAL -->
+    <div id="tributeModal" class="modal">
+        <div class="modal-content glass">
+            <div class="modal-header">
+                <h3 style="font-size:1.5rem; font-weight:700;">Send Tribute to Princess</h3>
+                <button onclick="closeTributeModal()" style="background:none; border:none; color:#fff; font-size:1.8rem; cursor:pointer; line-height:1;">×</button>
+            </div>
+            
+            <div class="modal-body">
+                <div class="form-group">
+                    <div class="form-label">AMOUNT</div>
+                    <div id="modalAmountDisplay" class="amount-display">£50</div>
+                    <input type="range" id="amountSlider" class="amount-slider" min="5" max="500" step="5" value="50" oninput="updateModalAmount()">
+                    <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:#888;">
+                        <div>£5</div><div>£500</div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="form-label">MESSAGE TO PRINCESS (OPTIONAL)</div>
+                    <textarea id="tributeMessage" class="glass" style="width:100%; height:100px; resize:vertical; background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.2); border-radius:12px; padding:14px; color:#fff; font-size:0.95rem;" placeholder="Thank you for letting me send, Princess..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <div class="form-label">PAYMENT METHOD</div>
+                    <div class="payment-options">
+                        <div onclick="selectPaymentMethod(this, 'Throne')" class="payment-btn">
+                            <span>👑</span> <span>Throne</span>
+                        </div>
+                        <div onclick="selectPaymentMethod(this, 'CashApp')" class="payment-btn">
+                            <span>💵</span> <span>CashApp</span>
+                        </div>
+                        <div onclick="selectPaymentMethod(this, 'Crypto')" class="payment-btn">
+                            <span>₿</span> <span>Crypto</span>
+                        </div>
+                        <div onclick="selectPaymentMethod(this, 'PayPal')" class="payment-btn">
+                            <span>💳</span> <span>PayPal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-footer">
+                <button onclick="submitTribute()" class="btn btn-pink" style="width:100%; padding:16px; font-size:1.1rem;">
+                    SEND TRIBUTE TO PRINCESS 💖
+                </button>
+                <div style="text-align:center; margin-top:12px; font-size:0.75rem; color:#666;">
+                    All tributes are non-refundable. Princess thanks you in advance.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- SUCCESS MODAL -->
+    <div id="successModal" class="modal">
+        <div class="modal-content glass" style="max-width:420px; text-align:center;">
+            <div class="modal-body" style="padding:3rem 2.5rem;">
+                <div style="font-size:4rem; margin-bottom:1rem;">💖</div>
+                <h3 style="font-size:1.85rem; margin-bottom:0.5rem;">THANK YOU, GOOD BOY</h3>
+                <p id="successText" style="color:#ff9ed2; margin-bottom:1.5rem;"></p>
+                
+                <div style="background:rgba(255,105,180,0.1); border-radius:12px; padding:1rem; margin:1.5rem 0;">
+                    <div style="font-size:0.85rem; color:#888;">YOUR TRIBUTE</div>
+                    <div id="successAmount" style="font-size:2.4rem; font-weight:800; color:#fff;"></div>
+                </div>
+                
+                <button onclick="closeSuccessModal()" class="btn btn-pink" style="padding:14px 42px;">
+                    CLOSE &amp; CONTINUE GOONING
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- PHOTO LIGHTBOX -->
+    <div id="lightbox" class="lightbox" onclick="if (event.target.id === 'lightbox') closeLightbox()">
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()">×</button>
+            <button class="lightbox-arrow prev" onclick="prevPhoto()">←</button>
+            <button class="lightbox-arrow next" onclick="nextPhoto()">→</button>
+            
+            <img id="lightboxImage" alt="Jorja photo">
+            
+            <div id="lightboxCaption" style="text-align:center; margin-top:1.25rem; color:#ff9ed2; font-weight:600;"></div>
+        </div>
+    </div>
+    
+    <!-- VIDEO MODAL -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content video-modal-content" style="max-width:860px;">
+            <div style="padding:1rem 1.25rem 0.5rem; display:flex; justify-content:space-between; align-items:center; background:rgba(255,0,170,0.08);">
+                <div>
+                    <span id="videoModalTitle" style="font-weight:700; font-size:1.15rem;"></span>
+                    <span id="videoModalLikes" style="margin-left:12px; background:#ff00aa; color:white; padding:2px 9px; border-radius:9999px; font-size:0.75rem; font-weight:700;"></span>
+                </div>
+                <button onclick="closeVideoModal()" style="background:none; border:none; color:#fff; font-size:2rem; line-height:1; cursor:pointer;">×</button>
+            </div>
+            
+            <video id="videoPlayer" controls autoplay style="width:100%; max-height:68vh; background:#000;"></video>
+            
+            <div style="padding:1rem 1.25rem; display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+                <button onclick="closeVideoModal(); openTributeModal(25);" class="btn btn-pink" style="padding:10px 24px; font-size:0.9rem;">
+                    💸 TRIBUTE WHILE WATCHING
+                </button>
+                <button onclick="closeVideoModal()" class="btn btn-secondary" style="padding:10px 24px; font-size:0.9rem;">
+                    CLOSE
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div style="max-width:1200px; margin:0 auto; padding:0 2rem;">
+            <p>© WORSHIP JORJA 2026 • All rights reserved • Spoilt scouse princess • Most viral drops included</p>
+            <p style="margin-top:6px; font-size:0.75rem;">This is a fantasy findom experience. All interactions are consensual roleplay.</p>
+        </div>
+    </footer>
+    
+    <div class="keyboard-hint" id="keyboardHint">
+        Keyboard: <strong>H</strong> Home • <strong>G</strong> Goon • <strong>T</strong> Tribute • <strong>A</strong> Archive • <strong>S</strong> Shop • <strong>B</strong> About • <strong>ESC</strong> Close
+    </div>
+    
+    <script>
+        // ==================== GLOBAL STATE ====================
+        let currentSection = 'home';
+        let timerInterval = null;
+        let timerSeconds = 0;
+        let isTimerRunning = false;
+        let edgeCount = 0;
+        let brainMeltPercent = 12;
+        let currentIntensity = 1;
+        let totalTributed = 187420;
+        let goonersOnline = 1317;
+        let sessionsToday = 812;
+        let currentPhotoIndex = 0;
+        let selectedPayment = null;
+        let currentGalleryTab = 'photos';
+        
+        const photos = [
+            {
+                url: "https://pbs.twimg.com/media/HMH8FnqXYAAB6fS.jpg",
+                caption: "Pink lace princess taking what's hers 💖 • Viral mirror selfie",
+                alt: "Jorja in pink lace corset and panties taking a mirror selfie"
+            },
+            {
+                url: "https://pbs.twimg.com/media/HMIIRIGXYAAyLSz.jpg",
+                caption: "Shiny latex domination 🖤 Your new religion",
+                alt: "Jorja in black latex catsuit and balaclava kneeling with phone"
+            },
+            {
+                url: "https://pbs.twimg.com/media/HMIIRIAWQAALsel.jpg",
+                caption: "Real boys send real gifts 👛 Coach for Princess",
+                alt: "Screenshot of received Coach handbag gifts from good boys"
+            },
+            {
+                url: "https://pbs.twimg.com/media/HMGCFclXoAAp9RV.jpg",
+                caption: "Good gooners know their place 😈",
+                alt: "Explicit text message from a devoted sub"
+            },
+            {
+                url: "https://pbs.twimg.com/media/HMGCFcMXwAANx2g.jpg",
+                caption: "+£100 deposited. Keep it coming 💸",
+                alt: "Bank deposit confirmation of £100 tribute"
+            },
+            {
+                url: "https://pbs.twimg.com/media/HMIIRH8WcAAE28j.jpg",
+                caption: "Love your voice... now send more 💕",
+                alt: "Text conversation showing devotion to Jorja"
+            }
+        ];
+        
+        const viralVideos = [
+            {
+                url: "https://video.twimg.com/amplify_video/2072054474596552704/vid/avc1/1080x1920/YFb9XjgqfeJbkSUC.mp4",
+                title: "𝜗𝜚⋆ SCOUSE SUPREMACY 𝜗𝜚⋆",
+                likes: 78,
+                duration: "15s",
+                caption: "My most liked recent drop — pure Scouse brat energy"
+            },
+            {
+                url: "https://video.twimg.com/amplify_video/2072037484536463360/vid/avc1/1080x1080/ewbmFZabLFKpIG03.mp4",
+                title: "Your girlfriend will finally understand...",
+                likes: 40,
+                duration: "35s",
+                caption: "Humiliating pay pig reality check — 40 likes"
+            },
+            {
+                url: "https://video.twimg.com/amplify_video/2072038543262732288/vid/avc1/352x640/xgNkst41yFR8cZvC.mp4",
+                title: "Locked and forced to watch me bounce...",
+                likes: 24,
+                duration: "2s",
+                caption: "Short &amp; devastating bounce tease"
+            }
+        ];
+        
+        const mantras = [
+            "STROKE FOR PRINCESS 💖",
+            "SEND. EDGE. REPEAT. ♻️",
+            "YOUR WALLET BELONGS TO ME 💸",
+            "GOOD GOONERS PAY TO EXIST",
+            "BRAIN MELTING... DON'T STOP 🧠",
+            "PINK HEELS OWN YOUR SOUL 👠",
+            "NO CUM WITHOUT TRIBUTE ❌",
+            "WEAKER. POORER. HAPPIER.",
+            "I EXIST TO BE SPOILED ✨",
+            "SCOUSE BRAT OWNS YOU NOW"
+        ];
+        
+        let currentMantraIndex = 0;
+        let mantraInterval = null;
+        
+        // ==================== NAVIGATION ====================
+        function navigateTo(section) {
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            
+            const target = document.getElementById(section);
+            if (target) {
+                target.classList.add('active');
+                currentSection = section;
+                history.replaceState(null, null, '#' + section);
+                updateActiveNav(section);
+                
+                if (section === 'goon' && !mantraInterval) {
+                    startMantraRotation();
+                    const teaseVid = document.getElementById('goonTeaseVideo');
+                    if (teaseVid) {
+                        teaseVid.muted = true;
+                        teaseVid.play().catch(() => {});
+                    }
+                }
+                if (section === 'gallery') {
+                    if (currentGalleryTab === 'photos') {
+                        renderPhotosGrid();
+                    } else {
+                        renderVideosGrid();
+                    }
+                }
+            }
+            document.getElementById('navLinks').classList.remove('show');
+        }
+        
+        function updateActiveNav(section) {
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.dataset.section === section) {
+                    link.classList.add('active');
+                }
+            });
+        }
+        
+        function handleHashChange() {
+            const hash = window.location.hash.substring(1) || 'home';
+            const validSections = ['home', 'goon', 'tribute', 'gallery', 'shop', 'about'];
+            if (validSections.includes(hash)) {
+                navigateTo(hash);
+            } else {
+                navigateTo('home');
+            }
+        }
+        
+        function setupMobileMenu() {
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('navLinks');
+            
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('show');
+            });
+            
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('show');
+                });
+            });
+        }
+        
+        // ==================== GALLERY TABS ====================
+        function switchGalleryTab(tab) {
+            currentGalleryTab = tab;
+            
+            const photosGrid = document.getElementById('photosGrid');
+            const videosGrid = document.getElementById('videosGrid');
+            const tabPhotos = document.getElementById('tab-photos');
+            const tabVideos = document.getElementById('tab-videos');
+            
+            if (tab === 'photos') {
+                photosGrid.style.display = 'grid';
+                videosGrid.style.display = 'none';
+                tabPhotos.classList.add('active');
+                tabVideos.classList.remove('active');
+                renderPhotosGrid();
+            } else {
+                photosGrid.style.display = 'none';
+                videosGrid.style.display = 'grid';
+                tabPhotos.classList.remove('active');
+                tabVideos.classList.add('active');
+                renderVideosGrid();
+            }
+        }
+        
+        function renderPhotosGrid() {
+            const grid = document.getElementById('photosGrid');
+            grid.innerHTML = '';
+            grid.style.display = 'grid';
+            
+            photos.forEach((photo, index) => {
+                const card = document.createElement('div');
+                card.className = 'photo-card';
+                card.innerHTML = `
+                    <img src="${photo.url}" alt="${photo.alt}" loading="lazy">
+                    <div class="photo-overlay">
+                        <div class="photo-caption">${photo.caption}</div>
+                    </div>
+                `;
+                card.onclick = () => openLightbox(index);
+                grid.appendChild(card);
+            });
+        }
+        
+        function renderVideosGrid() {
+            const grid = document.getElementById('videosGrid');
+            grid.innerHTML = '';
+            
+            viralVideos.forEach((video, index) => {
+                const card = document.createElement('div');
+                card.className = 'video-card';
+                card.innerHTML = `
+                    <div class="video-overlay" style="opacity:1; background: linear-gradient(to top, rgba(5,0,10,0.92) 30%, transparent);">
+                        <div class="video-caption" style="padding-bottom:8px;">${video.title}</div>
+                    </div>
+                    <div class="video-play-btn">▶</div>
+                    <div class="video-meta">
+                        <span>🔥</span> <span>${video.likes} likes</span>
+                    </div>
+                    <div class="video-duration">${video.duration}</div>
+                `;
+                card.onclick = () => openVideoModal(index);
+                grid.appendChild(card);
+            });
+        }
+        
+        // ==================== LIVE STATS ====================
+        function updateStats() {
+            document.getElementById('goonersOnline').textContent = goonersOnline.toLocaleString();
+            document.getElementById('totalTributed').textContent = totalTributed.toLocaleString();
+            document.getElementById('sessionsToday').textContent = sessionsToday.toLocaleString();
+        }
+        
+        function startLiveStats() {
+            setInterval(() => {
+                const change = Math.floor(Math.random() * 9) - 4;
+                goonersOnline = Math.max(1050, Math.min(1520, goonersOnline + change));
+                
+                if (Math.random() < 0.4) {
+                    const addAmount = Math.floor(Math.random() * 65) + 25;
+                    totalTributed += addAmount;
+                }
+                
+                if (Math.random() < 0.3) {
+                    sessionsToday += 1;
+                }
+                
+                updateStats();
+            }, 6200);
+        }
+        
+        // ==================== GOON CHAMBER ====================
+        function updateTimerDisplay() {
+            const mins = Math.floor(timerSeconds / 60);
+            const secs = timerSeconds % 60;
+            document.getElementById('timerDisplay').textContent = 
+                `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+        }
+        
+        function toggleTimer() {
+            const btn = document.getElementById('timerBtn');
+            const teaseVid = document.getElementById('goonTeaseVideo');
+            
+            if (!isTimerRunning) {
+                isTimerRunning = true;
+                btn.innerHTML = '⏸ PAUSE GOONING';
+                btn.style.background = 'linear-gradient(135deg, #c0267a, #9c1a5e)';
+                
+                timerInterval = setInterval(() => {
+                    timerSeconds++;
+                    updateTimerDisplay();
+                    
+                    if (brainMeltPercent < 100 && Math.random() < 0.55) {
+                        brainMeltPercent = Math.min(100, brainMeltPercent + 0.7);
+                        updateBrainMelt();
+                    }
+                    
+                    if (currentIntensity >= 3 && Math.random() < 0.018) {
+                        addEdge(true);
+                    }
+                }, 1000);
+                
+                if (teaseVid) {
+                    teaseVid.play().catch(() => {});
+                }
+                
+                if (!mantraInterval) startMantraRotation();
+            } else {
+                isTimerRunning = false;
+                btn.innerHTML = '▶ RESUME GOONING';
+                btn.style.background = 'linear-gradient(135deg, #ff00aa, #ff1493)';
+                clearInterval(timerInterval);
+                
+                if (teaseVid) teaseVid.pause();
+            }
+        }
+        
+        function resetTimer() {
+            clearInterval(timerInterval);
+            isTimerRunning = false;
+            timerSeconds = 0;
+            updateTimerDisplay();
+            
+            const btn = document.getElementById('timerBtn');
+            btn.innerHTML = '▶ START GOONING';
+            btn.style.background = 'linear-gradient(135deg, #ff00aa, #ff1493)';
+            
+            const teaseVid = document.getElementById('goonTeaseVideo');
+            if (teaseVid) teaseVid.pause();
+            
+            if (confirm('Reset everything including edges and melt?')) {
+                edgeCount = 0;
+                brainMeltPercent = 8;
+                document.getElementById('edgeCount').textContent = edgeCount;
+                updateBrainMelt();
+            }
+        }
+        
+        function addEdge(auto = false) {
+            edgeCount++;
+            document.getElementById('edgeCount').textContent = edgeCount;
+            
+            brainMeltPercent = Math.min(100, brainMeltPercent + (auto ? 5 : 9));
+            updateBrainMelt();
+            
+            const edgeEl = document.getElementById('edgeCount');
+            edgeEl.style.transform = 'scale(1.4)';
+            edgeEl.style.color = '#ff00aa';
+            setTimeout(() => {
+                edgeEl.style.transform = 'scale(1)';
+                edgeEl.style.color = '#ff69b4';
+            }, 280);
+            
+            if (edgeCount % 7 === 0 && edgeCount > 6) {
+                setTimeout(() => {
+                    if (confirm('You\'ve edged ' + edgeCount + ' times... ready to tribute Princess?')) {
+                        openTributeModal();
+                    }
+                }, 1200);
+            }
+        }
+        
+        function updateBrainMelt() {
+            const fill = document.getElementById('meltFill');
+            const value = document.getElementById('brainMelt');
+            
+            fill.style.width = brainMeltPercent + '%';
+            value.textContent = Math.floor(brainMeltPercent);
+            
+            const chamber = document.querySelector('.goon-chamber');
+            if (brainMeltPercent > 75) {
+                chamber.style.boxShadow = '0 0 40px rgba(255, 0, 170, 0.4)';
+                if (brainMeltPercent > 92) {
+                    chamber.style.animation = 'pulse-bg 1.2s ease infinite';
+                }
+            } else {
+                chamber.style.boxShadow = 'none';
+                chamber.style.animation = 'pulse-bg 8s ease infinite';
+            }
+            
+            if (brainMeltPercent >= 100) {
+                value.style.color = '#ff00aa';
+                launchConfetti(45);
+                setTimeout(() => {
+                    if (brainMeltPercent >= 100) {
+                        document.getElementById('mantraDisplay').innerHTML = 
+                            '<span style="color:#ff00aa; font-size:1.1rem;">COMPLETELY MELTED FOR PRINCESS 🧠💦</span>';
+                    }
+                }, 800);
+            }
+        }
+        
+        function boostMelt() {
+            brainMeltPercent = Math.min(100, brainMeltPercent + 24);
+            updateBrainMelt();
+            
+            const mantra = document.getElementById('mantraDisplay');
+            mantra.style.transition = 'all 0.1s';
+            mantra.style.transform = 'scale(1.08)';
+            setTimeout(() => {
+                mantra.style.transform = 'scale(1)';
+            }, 180);
+            
+            if (brainMeltPercent > 65 && Math.random() < 0.7) {
+                launchConfetti(30);
+            }
+        }
+        
+        function setIntensity(level) {
+            currentIntensity = level;
+            
+            document.querySelectorAll('.intensity-btn').forEach((btn, i) => {
+                btn.classList.toggle('active', (i + 1) === level);
+            });
+            
+            const chamber = document.querySelector('.goon-chamber');
+            const timer = document.getElementById('timerDisplay');
+            
+            if (level === 1) {
+                chamber.style.borderColor = 'rgba(255,105,180,0.2)';
+                timer.style.textShadow = '0 0 20px rgba(255, 0, 170, 0.3)';
+            } else if (level === 2) {
+                chamber.style.borderColor = 'rgba(255,105,180,0.4)';
+                timer.style.textShadow = '0 0 30px rgba(255, 0, 170, 0.5)';
+            } else if (level === 3) {
+                chamber.style.borderColor = '#ff00aa';
+                timer.style.textShadow = '0 0 40px rgba(255, 0, 170, 0.7)';
+            } else if (level === 4) {
+                chamber.style.borderColor = '#ff00aa';
+                chamber.style.boxShadow = '0 0 60px rgba(255, 0, 170, 0.35)';
+                timer.style.textShadow = '0 0 50px #ff00aa, 0 0 80px #ff00aa';
+                brainMeltPercent = Math.min(100, brainMeltPercent + 20);
+                updateBrainMelt();
+            }
+            
+            if (mantraInterval) {
+                clearInterval(mantraInterval);
+                startMantraRotation(level);
+            }
+        }
+        
+        function startMantraRotation(speed = 1) {
+            if (mantraInterval) clearInterval(mantraInterval);
+            
+            const display = document.getElementById('mantraDisplay');
+            
+            function showNextMantra() {
+                display.style.transition = 'opacity 0.25s ease';
+                display.style.opacity = '0';
+                
+                setTimeout(() => {
+                    currentMantraIndex = (currentMantraIndex + 1) % mantras.length;
+                    display.innerHTML = mantras[currentMantraIndex];
+                    display.style.opacity = '1';
+                }, 260);
+            }
+            
+            display.innerHTML = mantras[currentMantraIndex];
+            
+            const intervalTime = speed >= 3 ? 2100 : (speed === 2 ? 3100 : 4100);
+            mantraInterval = setInterval(showNextMantra, intervalTime);
+        }
+        
+        function quickTribute(amount, fromGoon = false) {
+            totalTributed += amount;
+            updateStats();
+            
+            launchConfetti(55);
+            
+            const toast = document.createElement('div');
+            toast.style.cssText = 'position:fixed;bottom:30px;left:50%;transform:translateX(-50%);background:#ff00aa;color:white;padding:12px 26px;border-radius:9999px;font-weight:700;box-shadow:0 10px 30px rgba(255,0,170,0.4);z-index:9999;';
+            toast.textContent = `+£${amount} sent to Princess 💖`;
+            document.body.appendChild(toast);
+            
+            setTimeout(() => {
+                toast.style.transition = 'all 0.4s ease';
+                toast.style.opacity = '0';
+                setTimeout(() => toast.remove(), 300);
+            }, 1400);
+            
+            if (!fromGoon && Math.random() < 0.35) {
+                setTimeout(() => openTributeModal(amount), 1600);
+            }
+        }
+        
+        function setupGoonKeyboard() {
+            document.addEventListener('keydown', function(e) {
+                if (currentSection !== 'goon') return;
+                
+                if (e.key === ' ' || e.key === 'Spacebar') {
+                    e.preventDefault();
+                    toggleTimer();
+                }
+                if (e.key.toLowerCase() === 'e') {
+                    addEdge();
+                }
+                if (e.key.toLowerCase() === 'm') {
+                    boostMelt();
+                }
+                if (e.key === 'Escape' && isTimerRunning) {
+                    toggleTimer();
+                }
+            });
+            
+            setTimeout(() => {
+                const teaseVid = document.getElementById('goonTeaseVideo');
+                if (teaseVid) {
+                    teaseVid.addEventListener('click', () => {
+                        teaseVid.muted = !teaseVid.muted;
+                        if (teaseVid.paused) teaseVid.play().catch(()=>{});
+                    });
+                }
+            }, 800);
+        }
+        
+        // ==================== TRIBUTE MODAL ====================
+        function openTributeModal(prefillAmount = null) {
+            const modal = document.getElementById('tributeModal');
+            const slider = document.getElementById('amountSlider');
+            const display = document.getElementById('modalAmountDisplay');
+            
+            modal.classList.add('active');
+            
+            if (prefillAmount) {
+                slider.value = prefillAmount;
+            } else {
+                slider.value = 50;
+            }
+            
+            updateModalAmount();
+            selectedPayment = null;
+            document.querySelectorAll('.payment-btn').forEach(b => b.style.borderColor = 'rgba(255,255,255,0.2)');
+        }
+        
+        function closeTributeModal() {
+            document.getElementById('tributeModal').classList.remove('active');
+        }
+        
+        function updateModalAmount() {
+            const slider = document.getElementById('amountSlider');
+            const display = document.getElementById('modalAmountDisplay');
+            display.textContent = '£' + slider.value;
+        }
+        
+        function selectPaymentMethod(element, method) {
+            document.querySelectorAll('.payment-btn').forEach(el => {
+                el.style.borderColor = 'rgba(255,255,255,0.2)';
+                el.style.background = 'rgba(255,255,255,0.05)';
+            });
+            
+            element.style.borderColor = '#ff00aa';
+            element.style.background = 'rgba(255, 0, 170, 0.15)';
+            selectedPayment = method;
+        }
+        
+        function selectTributeTier(amount) {
+            openTributeModal(amount);
+        }
+        
+        function submitTribute() {
+            const amount = parseInt(document.getElementById('amountSlider').value);
+            const message = document.getElementById('tributeMessage').value.trim();
+            const modal = document.getElementById('tributeModal');
+            
+            if (!amount || amount < 5) {
+                alert('Minimum tribute is £5');
+                return;
+            }
+            
+            modal.classList.remove('active');
+            
+            const processingDiv = document.createElement('div');
+            processingDiv.className = 'modal active';
+            processingDiv.innerHTML = `
+                <div class="modal-content glass" style="max-width:380px; text-align:center; padding:3rem 2rem;">
+                    <div style="font-size:3rem; margin-bottom:1rem;">⏳</div>
+                    <h3 style="margin-bottom:0.5rem;">Processing your sacrifice...</h3>
+                    <p style="color:#ff9ed2;">Sending £${amount} to Princess Jorja</p>
+                    <div style="margin-top:2rem;">
+                        <div class="melt-bar" style="height:6px; background:rgba(255,255,255,0.1);">
+                            <div style="height:100%; width:0%; background:linear-gradient(90deg,#ff69b4,#ff00aa); animation:processing 1.6s ease forwards;"></div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(processingDiv);
+            
+            setTimeout(() => {
+                processingDiv.remove();
+                
+                totalTributed += amount;
+                updateStats();
+                
+                showTributeSuccess(amount, message);
+                launchConfetti(120);
+            }, 1650);
+        }
+        
+        function showTributeSuccess(amount, message) {
+            const successModal = document.getElementById('successModal');
+            const successText = document.getElementById('successText');
+            const successAmount = document.getElementById('successAmount');
+            
+            successAmount.textContent = '£' + amount;
+            
+            let thankYou = "Princess is very pleased with you 💖";
+            if (message) {
+                thankYou += `<br><br><span style="font-size:0.9rem; color:#ccc;">“${message}”</span>`;
+            }
+            successText.innerHTML = thankYou;
+            
+            successModal.classList.add('active');
+            setTimeout(() => launchConfetti(60), 600);
+        }
+        
+        function closeSuccessModal() {
+            document.getElementById('successModal').classList.remove('active');
+            
+            setTimeout(() => {
+                if (currentSection === 'tribute' || currentSection === 'home') {
+                    if (confirm('Want to go deeper into the Goon Chamber?')) {
+                        navigateTo('goon');
+                    }
+                }
+            }, 800);
+        }
+        
+        // ==================== PHOTO LIGHTBOX ====================
+        function openLightbox(index) {
+            currentPhotoIndex = index;
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightboxImage');
+            const caption = document.getElementById('lightboxCaption');
+            
+            img.src = photos[index].url;
+            caption.innerHTML = photos[index].caption;
+            lightbox.classList.add('active');
+            
+            document.onkeydown = function(e) {
+                if (!lightbox.classList.contains('active')) return;
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowLeft') prevPhoto();
+                if (e.key === 'ArrowRight') nextPhoto();
+            };
+        }
+        
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.onkeydown = null;
+        }
+        
+        function prevPhoto() {
+            currentPhotoIndex = (currentPhotoIndex - 1 + photos.length) % photos.length;
+            const img = document.getElementById('lightboxImage');
+            const caption = document.getElementById('lightboxCaption');
+            img.src = photos[currentPhotoIndex].url;
+            caption.innerHTML = photos[currentPhotoIndex].caption;
+        }
+        
+        function nextPhoto() {
+            currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
+            const img = document.getElementById('lightboxImage');
+            const caption = document.getElementById('lightboxCaption');
+            img.src = photos[currentPhotoIndex].url;
+            caption.innerHTML = photos[currentPhotoIndex].caption;
+        }
+        
+        // ==================== VIDEO MODAL ====================
+        function openVideoModal(index) {
+            const videoData = viralVideos[index];
+            const modal = document.getElementById('videoModal');
+            const player = document.getElementById('videoPlayer');
+            const titleEl = document.getElementById('videoModalTitle');
+            const likesEl = document.getElementById('videoModalLikes');
+            
+            player.src = videoData.url;
+            titleEl.textContent = videoData.title;
+            likesEl.innerHTML = `🔥 ${videoData.likes} likes`;
+            
+            modal.classList.add('active');
+            
+            setTimeout(() => {
+                player.play().catch(() => {});
+            }, 300);
+            
+            document.onkeydown = function(e) {
+                if (e.key === 'Escape') closeVideoModal();
+            };
+        }
+        
+        function closeVideoModal() {
+            const modal = document.getElementById('videoModal');
+            const player = document.getElementById('videoPlayer');
+            player.pause();
+            player.src = '';
+            modal.classList.remove('active');
+            document.onkeydown = null;
+        }
+        
+        // ==================== SHOP ====================
+        function purchaseProduct(productName, price) {
+            const modal = document.getElementById('tributeModal');
+            const slider = document.getElementById('amountSlider');
+            const display = document.getElementById('modalAmountDisplay');
+            const messageInput = document.getElementById('tributeMessage');
+            
+            modal.classList.add('active');
+            slider.value = price;
+            display.textContent = '£' + price;
+            messageInput.value = `Payment for: ${productName}`;
+            
+            const originalSubmit = window.submitTribute;
+            window.submitTribute = function() {
+                const amount = parseInt(slider.value);
+                const msg = messageInput.value.trim();
+                
+                modal.classList.remove('active');
+                
+                const processing = document.createElement('div');
+                processing.className = 'modal active';
+                processing.innerHTML = `
+                    <div class="modal-content glass" style="max-width:380px;text-align:center;padding:2.5rem 2rem;">
+                        <div style="font-size:2.8rem;margin-bottom:1rem;">📦</div>
+                        <h3>Delivering ${productName}...</h3>
+                        <p style="color:#ff9ed2;">Princess is preparing your digital worship item</p>
+                    </div>
+                `;
+                document.body.appendChild(processing);
+                
+                setTimeout(() => {
+                    processing.remove();
+                    totalTributed += amount;
+                    updateStats();
+                    launchConfetti(90);
+                    
+                    const success = document.getElementById('successModal');
+                    document.getElementById('successAmount').textContent = '£' + amount;
+                    document.getElementById('successText').innerHTML = 
+                        `${productName} purchased successfully!<br><span style="font-size:0.95rem;">Check your DMs / email for delivery from Princess 💌</span>`;
+                    success.classList.add('active');
+                    
+                    window.submitTribute = originalSubmit;
+                }, 1450);
+            };
+        }
+        
+        // ==================== CONFETTI ====================
+        function launchConfetti(count = 80) {
+            const colors = ['#ff69b4', '#ff00aa', '#ffffff', '#ffd700', '#ff1493'];
+            
+            for (let i = 0; i < count; i++) {
+                setTimeout(() => {
+                    const particle = document.createElement('div');
+                    particle.className = 'confetti';
+                    
+                    const size = Math.random() * 11 + 7;
+                    particle.style.width = `${size}px`;
+                    particle.style.height = `${size}px`;
+                    particle.style.left = `${Math.random() * 100}vw`;
+                    particle.style.top = `-20px`;
+                    particle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                    particle.style.borderRadius = Math.random() > 0.6 ? '50%' : '2px';
+                    particle.style.opacity = Math.random() * 0.7 + 0.5;
+                    particle.style.zIndex = '9999';
+                    
+                    const duration = Math.random() * 2.8 + 2.4;
+                    particle.style.animation = `confetti-fall ${duration}s linear forwards`;
+                    particle.style.transform = `rotate(${Math.random() * 360}deg)`;
+                    
+                    document.body.appendChild(particle);
+                    
+                    setTimeout(() => {
+                        if (particle.parentNode) particle.parentNode.removeChild(particle);
+                    }, duration * 1000 + 200);
+                }, i * 1.8);
+            }
+        }
+        
+        // ==================== KEYBOARD SHORTCUTS ====================
+        function setupGlobalKeyboard() {
+            document.addEventListener('keydown', function(e) {
+                if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+                
+                const key = e.key.toLowerCase();
+                
+                if (key === 'h') navigateTo('home');
+                if (key === 'g') navigateTo('goon');
+                if (key === 't') navigateTo('tribute');
+                if (key === 'a') navigateTo('gallery');
+                if (key === 's') navigateTo('shop');
+                if (key === 'b' || key === 'o') navigateTo('about');
+                
+                if (key === '/' && document.activeElement.tagName === 'BODY') {
+                    e.preventDefault();
+                    openTributeModal();
+                }
+                
+                if (key === '?') {
+                    const hint = document.getElementById('keyboardHint');
+                    hint.style.display = 'block';
+                    setTimeout(() => {
+                        hint.style.display = 'none';
+                    }, 2800);
+                }
+                
+                if (e.key === 'Escape') {
+                    document.querySelectorAll('.modal.active').forEach(m => m.classList.remove('active'));
+                    const lb = document.getElementById('lightbox');
+                    if (lb.classList.contains('active')) lb.classList.remove('active');
+                    const vm = document.getElementById('videoModal');
+                    if (vm.classList.contains('active')) closeVideoModal();
+                }
+            });
+            
+            setTimeout(() => {
+                const hint = document.getElementById('keyboardHint');
+                if (hint) {
+                    hint.style.display = 'block';
+                    setTimeout(() => hint.style.display = 'none', 4200);
+                }
+            }, 8500);
+        }
+        
+        // ==================== INITIALIZATION ====================
+        function initializeWebsite() {
+            updateStats();
+            startLiveStats();
+            setupMobileMenu();
+            setupGoonKeyboard();
+            
+            const mantraEl = document.getElementById('mantraDisplay');
+            if (mantraEl) mantraEl.innerHTML = mantras[0];
+            
+            updateBrainMelt();
+            
+            setTimeout(() => {
+                renderPhotosGrid();
+            }, 600);
+            
+            setupGlobalKeyboard();
+            
+            window.addEventListener('hashchange', handleHashChange);
+            
+            const initialHash = window.location.hash.substring(1);
+            if (initialHash && ['home','goon','tribute','gallery','shop','about'].includes(initialHash)) {
+                setTimeout(() => navigateTo(initialHash), 60);
+            } else {
+                document.getElementById('home').classList.add('active');
+                updateActiveNav('home');
+            }
+            
+            setTimeout(() => {
+                if (Math.random() < 0.6) {
+                    totalTributed += Math.floor(Math.random() * 95) + 55;
+                    updateStats();
+                }
+            }, 11500);
+            
+            let logoClicks = 0;
+            const logo = document.querySelector('.logo');
+            if (logo) {
+                logo.addEventListener('click', function(e) {
+                    logoClicks++;
+                    if (logoClicks >= 5) {
+                        launchConfetti(180);
+                        logoClicks = 0;
+                        const originalText = logo.querySelector('.logo-text').textContent;
+                        logo.querySelector('.logo-text').textContent = 'PRINCESS LOVES YOU';
+                        setTimeout(() => {
+                            logo.querySelector('.logo-text').textContent = originalText;
+                        }, 1400);
+                    }
+                });
+            }
+            
+            const preloadImages = [
+                'https://pbs.twimg.com/media/HMH8FnqXYAAB6fS.jpg',
+                'https://pbs.twimg.com/media/HMIIRIGXYAAyLSz.jpg'
+            ];
+            preloadImages.forEach(src => {
+                const img = new Image();
+                img.src = src;
+            });
+            
+            setTimeout(() => {
+                const tease = document.getElementById('goonTeaseVideo');
+                if (tease) {
+                    tease.load();
+                }
+            }, 1200);
+            
+            setTimeout(() => {
+                const firstNav = document.querySelector('.nav-link[data-section="home"]');
+                if (firstNav) firstNav.classList.add('active');
+            }, 200);
+            
+            console.log('%c[WORSHIP JORJA v2] Enhanced pink Y2K findom temple with viral videos initialized.', 'color:#ff69b4');
+        }
+        
+        window.onload = initializeWebsite;
+    </script>
+</body>
+</html>
