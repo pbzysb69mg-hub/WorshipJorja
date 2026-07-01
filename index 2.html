@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORSHIP JORJA • NEON GODDESS PROTOCOL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Inter:wght@300;400;500&amp;display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&amp;display=swap');
+        
+        :root {
+            --neon-pink: #ff00ff;
+            --neon-cyan: #00f0ff;
+            --primary: #ff00ff;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-futuristic {
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .heading-serif {
+            font-family: 'Playfair Display', Georgia, serif;
+        }
+
+        .cyber-bg {
+            background-color: #0a0a14;
+        }
+
+        .section-bg {
+            background: linear-gradient(180deg, #120d1f 0%, #0a0a14 100%);
+        }
+
+        .neon-pink {
+            color: #ff00ff;
+            text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+        }
+
+        .neon-cyan {
+            color: #00f0ff;
+            text-shadow: 0 0 10px #00f0ff;
+        }
+
+        .card {
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            border: 1px solid rgba(255, 0, 255, 0.2);
+        }
+        
+        .card:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 0 40px rgba(255, 0, 255, 0.4);
+            border-color: #ff00ff;
+        }
+
+        .nav-link {
+            transition: all 0.2s ease;
+            position: relative;
+        }
+        
+        .nav-link:hover {
+            color: #ff00ff;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background: linear-gradient(to right, #ff00ff, #00f0ff);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .goddess-gradient {
+            background: linear-gradient(90deg, #ff00ff, #00f0ff, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% 100%;
+            animation: gradientShift 4s linear infinite;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .futuristic-bg {
+            background: 
+                radial-gradient(circle at 50% 30%, rgba(255, 0, 255, 0.15) 0%, transparent 60%),
+                linear-gradient(transparent, rgba(0, 240, 255, 0.08));
+        }
+
+        .clip-card {
+            background: rgba(18, 13, 31, 0.95);
+            border: 1px solid rgba(255, 0, 255, 0.3);
+            box-shadow: 0 0 15px rgba(0, 240, 255, 0.1);
+        }
+
+        .tribute-btn {
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
+        }
+        
+        .tribute-btn:hover {
+            transform: scale(1.08) translateY(-2px);
+            box-shadow: 0 0 30px rgba(255, 0, 255, 0.8);
+        }
+
+        .video-placeholder {
+            background: linear-gradient(135deg, #1a0f2e, #120d1f);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .video-placeholder::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(255, 0, 255, 0.08) 10px,
+                rgba(255, 0, 255, 0.08) 20px
+            );
+            animation: scanline 4s linear infinite;
+        }
+
+        @keyframes scanline {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(400%); }
+        }
+
+        .neon-text {
+            text-shadow: 
+                0 0 5px #ff00ff,
+                0 0 10px #ff00ff,
+                0 0 20px #00f0ff;
+        }
+    </style>
+</head>
+<body class="cyber-bg text-zinc-200 overflow-x-hidden">
+    <!-- Age Verification Modal -->
+    <div id="age-modal" class="fixed inset-0 bg-black/95 z-[100] flex items-center justify-center backdrop-blur-md">
+        <div class="bg-[#120d1f] border border-[#ff00ff]/50 rounded-3xl p-10 max-w-md w-full mx-4 text-center shadow-2xl shadow-pink-500/20">
+            <div class="mb-8">
+                <div class="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-pink-500 to-cyan-400 mb-6">
+                    <i class="fas fa-exclamation-triangle text-4xl text-black"></i>
+                </div>
+                <h2 class="text-4xl font-bold heading-futuristic tracking-widest neon-pink mb-3">ACCESS PROTOCOL</h2>
+                <p class="text-zinc-300">This domain contains high-intensity adult digital fetish content. Age verification required.</p>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <button onclick="enterSite()" 
+                        class="w-full py-5 bg-gradient-to-r from-pink-600 via-purple-600 to-cyan-500 hover:brightness-110 text-white font-bold text-lg tracking-wider rounded-2xl transition-all neon-text">
+                    CONFIRM 18+ — ENTER THE GRID
+                </button>
+                <button onclick="window.location.href='https://www.google.com'" 
+                        class="w-full py-4 text-zinc-400 hover:text-zinc-200 transition-colors">
+                    EXIT PROTOCOL
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-black/80 backdrop-blur-xl border-b border-[#ff00ff]/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center gap-x-4">
+                    <div class="w-12 h-12 bg-gradient-to-br from-pink-500 via-purple-500 to-cyan-400 rounded-2xl flex items-center justify-center shadow-lg shadow-pink-500/50">
+                        <span class="text-black font-bold text-3xl heading-futuristic">J</span>
+                    </div>
+                    <div>
+                        <div class="font-bold text-3xl tracking-[-2px] heading-futuristic goddess-gradient">WORSHIP JORJA</div>
+                        <div class="text-xs text-cyan-400 tracking-[4px] -mt-1">NEON DOMINATION PROTOCOL</div>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex items-center gap-x-10 text-sm font-medium uppercase tracking-widest">
+                    <a href="#clips" class="nav-link text-zinc-300 hover:text-white">CLIPS</a>
+                    <a href="#tribute" class="nav-link text-zinc-300 hover:text-white">TRIBUTE</a>
+                    <a href="#join" class="nav-link text-zinc-300 hover:text-white">JOIN THE GRID</a>
+                </div>
+
+                <div class="flex items-center gap-x-4">
+                    <a href="https://x.com/worshipjorja" target="_blank" 
+                       class="flex items-center gap-x-3 px-5 py-2.5 text-sm border border-[#ff00ff]/40 hover:border-[#ff00ff] rounded-full transition-all">
+                        <i class="fab fa-x-twitter"></i>
+                        <span>@worshipjorja</span>
+                    </a>
+                    <button onclick="toggleMobileMenu()" class="md:hidden w-10 h-10 flex items-center justify-center text-pink-400">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="relative min-h-[100dvh] flex items-center justify-center futuristic-bg overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(#ff00ff_0.8px,transparent_1px)] bg-[length:30px_30px] opacity-30"></div>
+        
+        <div class="relative z-10 max-w-5xl px-6 text-center">
+            <div class="inline-flex items-center gap-x-3 px-6 py-2 rounded-full border border-pink-400/30 bg-black/60 mb-8 backdrop-blur">
+                <div class="w-3 h-3 bg-pink-500 rounded-full animate-pulse"></div>
+                <span class="uppercase text-xs tracking-[3px] font-mono text-pink-400">LIVE TRANSMISSION • 2077</span>
+            </div>
+            
+            <h1 class="text-7xl md:text-[6.5rem] leading-none font-black tracking-[-4px] heading-futuristic goddess-gradient mb-6 neon-text">
+                WORSHIP<br>JORJA
+            </h1>
+            
+            <p class="max-w-lg mx-auto text-2xl text-zinc-100 mb-4">Digital Goddess • Neural Domme</p>
+            <p class="max-w-md mx-auto text-lg text-zinc-400 mb-12">Surrender to the neon grid. Goon. Pay. Ascend.</p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#clips" class="group px-12 py-5 bg-gradient-to-r from-pink-500 to-purple-600 font-bold text-xl rounded-3xl hover:scale-105 transition-all flex items-center justify-center gap-3">
+                    ACCESS CLIPS
+                    <span class="text-xl group-hover:rotate-45 transition">→</span>
+                </a>
+                <a href="#tribute" class="px-12 py-5 border-2 border-cyan-400 hover:bg-cyan-400/10 font-bold text-xl rounded-3xl transition-all">
+                    SEND TRIBUTE
+                </a>
+            </div>
+        </div>
+
+        <div class="absolute bottom-12 left-1/2 flex flex-col items-center text-pink-400 text-xs tracking-[3px] animate-bounce">
+            SCROLL TO SYNC
+            <i class="fas fa-chevron-down mt-2"></i>
+        </div>
+    </header>
+
+    <!-- Clips Section -->
+    <section id="clips" class="max-w-7xl mx-auto px-6 py-24 section-bg">
+        <div class="text-center mb-16">
+            <div class="text-pink-400 uppercase tracking-[4px] text-sm font-mono mb-3">HIGH-RESOLUTION CONTENT</div>
+            <h2 class="text-6xl font-bold heading-futuristic neon-pink">GOON ARCHIVES</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Example clips with futuristic styling -->
+            <div class="clip-card rounded-3xl overflow-hidden group cursor-pointer" onclick="watchClip(1)">
+                <div class="video-placeholder aspect-video flex items-center justify-center">
+                    <div class="text-center z-10">
+                        <i class="fas fa-play-circle text-7xl text-pink-400/70 group-hover:text-white transition-all"></i>
+                    </div>
+                </div>
+                <div class="p-8">
+                    <div class="uppercase text-xs tracking-widest text-cyan-400 mb-2">45 MIN • 8K NEON</div>
+                    <div class="text-2xl font-semibold mb-3">NEURAL GOON INDUCTION v1.0</div>
+                    <p class="text-zinc-400">Sink into the pink abyss. Voice commands activated.</p>
+                    <div class="mt-6 flex justify-between items-center">
+                        <span class="text-2xl font-bold text-pink-400">$29</span>
+                        <span class="text-xs px-4 py-2 border border-pink-500/50 rounded-full">WATCH</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More clips would go here - copy pattern -->
+            <div class="clip-card rounded-3xl overflow-hidden group cursor-pointer" onclick="watchClip(2)">
+                <div class="video-placeholder aspect-video flex items-center justify-center">
+                    <div class="text-center z-10">
+                        <i class="fas fa-play-circle text-7xl text-pink-400/70 group-hover:text-white transition-all"></i>
+                    </div>
+                </div>
+                <div class="p-8">
+                    <div class="uppercase text-xs tracking-widest text-cyan-400 mb-2">68 MIN • 8K NEON</div>
+                    <div class="text-2xl font-semibold mb-3">FINANCIAL OVERDRIVE PROTOCOL</div>
+                    <p class="text-zinc-400">Drain your wallet in real time. Tribute counters enabled.</p>
+                    <div class="mt-6 flex justify-between items-center">
+                        <span class="text-2xl font-bold text-pink-400">$49</span>
+                        <span class="text-xs px-4 py-2 border border-pink-500/50 rounded-full">WATCH</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clip-card rounded-3xl overflow-hidden group cursor-pointer" onclick="watchClip(3)">
+                <div class="video-placeholder aspect-video flex items-center justify-center">
+                    <div class="text-center z-10">
+                        <i class="fas fa-play-circle text-7xl text-pink-400/70 group-hover:text-white transition-all"></i>
+                    </div>
+                </div>
+                <div class="p-8">
+                    <div class="uppercase text-xs tracking-widest text-cyan-400 mb-2">52 MIN • 8K NEON</div>
+                    <div class="text-2xl font-semibold mb-3">EDGELOCK INFINITY LOOP</div>
+                    <p class="text-zinc-400">No release. Only endless pink gooning.</p>
+                    <div class="mt-6 flex justify-between items-center">
+                        <span class="text-2xl font-bold text-pink-400">$35</span>
+                        <span class="text-xs px-4 py-2 border border-pink-500/50 rounded-full">WATCH</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tribute -->
+    <section id="tribute" class="py-24 border-t border-b border-pink-500/20 bg-black/60">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="grid md:grid-cols-5 gap-12 items-center">
+                <div class="md:col-span-2">
+                    <div class="text-pink-400 font-mono tracking-[4px] text-sm">PAYMENT NODE ACTIVE</div>
+                    <h3 class="text-6xl heading-futuristic font-bold neon-pink mt-3">TRANSMIT YOUR OFFERING</h3>
+                    <p class="text-xl text-zinc-300 mt-6">Every credit sent strengthens the connection. Choose your devotion level.</p>
+                </div>
+                
+                <div class="md:col-span-3 space-y-6">
+                    <div onclick="sendTribute(25)" class="group flex justify-between items-center p-8 rounded-3xl border border-pink-500/30 hover:border-pink-400 bg-black/60 cursor-pointer">
+                        <div>
+                            <div class="text-4xl font-bold">$25</div>
+                            <div class="text-zinc-400">Initiate Sync</div>
+                        </div>
+                        <button class="tribute-btn px-10 py-4 bg-gradient-to-r from-pink-500 to-purple-600 rounded-2xl font-bold">TRANSMIT</button>
+                    </div>
+                    <!-- More tribute tiers can be added -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Goon Timer -->
+    <section class="max-w-3xl mx-auto px-6 py-20 text-center">
+        <div class="bg-gradient-to-br from-black to-[#1a0f2e] border border-pink-500/40 rounded-3xl p-12">
+            <div class="text-pink-400 uppercase text-sm tracking-widest mb-4">GOONING MODULE</div>
+            <div id="timer-display" class="font-mono text-8xl font-bold tracking-tighter text-white mb-6">25:00</div>
+            
+            <div class="flex gap-4 justify-center">
+                <button onclick="startGoonTimer()" class="flex-1 max-w-xs py-5 bg-gradient-to-r from-pink-500 to-cyan-400 font-bold text-xl rounded-3xl">ACTIVATE GOON CYCLE</button>
+                <button onclick="resetGoonTimer()" class="px-8 py-5 border border-zinc-700 hover:bg-zinc-900 rounded-3xl">RESET</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer + other sections remain similar but styled accordingly -->
+    <footer class="bg-black py-12 border-t border-pink-900/50 text-center text-xs text-zinc-500">
+        <p>© 2077 WORSHIP JORJA NEURAL NETWORK • ALL RIGHTS RESERVED • 18+ PROTOCOL ENFORCED</p>
+    </footer>
+
+    <!-- Video Modal (same as before but pink themed) -->
+    <div id="video-modal" onclick="if(event.target.id==='video-modal')closeVideoModal()" class="hidden fixed inset-0 bg-black/95 z-[200] flex items-center justify-center p-4">
+        <div class="bg-[#120d1f] w-full max-w-4xl rounded-3xl border border-pink-500/50 overflow-hidden">
+            <div class="p-6 border-b border-pink-500/30 flex justify-between">
+                <div id="modal-clip-title" class="text-2xl font-bold heading-futuristic"></div>
+                <button onclick="closeVideoModal()" class="text-4xl text-pink-400 hover:text-white">&times;</button>
+            </div>
+            <div id="video-area" class="aspect-video bg-black flex items-center justify-center">
+                <!-- Filled by JS -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
